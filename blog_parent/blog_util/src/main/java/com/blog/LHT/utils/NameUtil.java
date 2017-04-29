@@ -2,7 +2,7 @@ package com.blog.LHT.utils;
 
 import java.time.LocalTime;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 
 /**
@@ -28,8 +28,8 @@ public class NameUtil {
 		return bgName;
 	}
 	
-	@Test
-	public void testTime(){
-		System.out.println(LocalTime.now().toString());
-	}
+//	@Test
+//	public void testTime(){
+//		System.out.println(LocalTime.now().toString());
+//	}
 }
