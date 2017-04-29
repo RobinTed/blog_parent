@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.blog.LHT.entity.Article" table="t_article">
+    		<id name="articleId" column="articleId">
+    			<generator class="native"></generator>
+    		</id>
+    		<property name="articleName" column="articleName"></property>
+    		<property name="updateTime" column="updateTime"></property>
+    		<property name="categoryId" column="categoryId"></property>
+    		<property name="userId" column="userId"></property>
+    		<property name="showDefault" column="showDefault"></property>
+    		<property name="articleText" column="articleText"></property>
+    		<property name="stick" column="stick"></property>
+    		<property name="articleView" column="articleView"></property>
+    		<property name="agree" column="agree"></property>
+    		<property name="disagree" column="disagree"></property>
+    	</class>
+    </hibernate-mapping>

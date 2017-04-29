@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="0" name="com.blog.LHT.service.testcrud.UserTest" time="2.809" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\jdk1.8u121\jdk\jre\bin"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\STSWorkspace\blog\blog_parent"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="F:\STSWorkspace\blog\blog_parent"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\jdk1.8u121\jdk\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\Tanl\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="F:\STSWorkspace\blog\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3685570415720061606.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\jdk1.8u121\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:/jdk1.8u121/jdk/bin/../jre/bin/client;E:/jdk1.8u121/jdk/bin/../jre/bin;E:/jdk1.8u121/jdk/bin/../jre/lib/i386;D:\app\Tanl\product\11.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\jdk1.8u121\jdk\bin;%JAVA_HONE%\jre\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;E:\Javatools\maven\apache-maven-3.3.9\bin;D:\UTF\bin;D:\wamp\wamp\bin\mysql\mysql5.7.14\bin;C:\Users\Tanl\AppData\Local\Microsoft\WindowsApps;E:\STS3.8\sts-bundle\sts-3.8.3.RELEASE;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Tanl"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Tanl"/>
+    <property name="java.class.path" value="E:\Javatools\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="E:\jdk1.8u121\jdk\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s E:\Javatools\maven\apache-maven-3.3.9\conf\settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="E:\jdk1.8u121\jdk\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\jdk1.8u121\jdk\jre\lib\resources.jar;E:\jdk1.8u121\jdk\jre\lib\rt.jar;E:\jdk1.8u121\jdk\jre\lib\sunrsasign.jar;E:\jdk1.8u121\jdk\jre\lib\jsse.jar;E:\jdk1.8u121\jdk\jre\lib\jce.jar;E:\jdk1.8u121\jdk\jre\lib\charsets.jar;E:\jdk1.8u121\jdk\jre\lib\jfr.jar;E:\jdk1.8u121\jdk\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\Javatools\maven\apache-maven-3.3.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase classname="com.blog.LHT.service.testcrud.UserTest" name="testUpdate" time="0.455">
+    <error message="Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1; nested exception is org.hibernate.StaleStateException: Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1" type="org.springframework.orm.hibernate5.HibernateOptimisticLockingFailureException">org.springframework.orm.hibernate5.HibernateOptimisticLockingFailureException: Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1; nested exception is org.hibernate.StaleStateException: Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1
+	at org.springframework.orm.hibernate5.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:206)
+	at org.springframework.orm.hibernate5.HibernateTransactionManager.convertHibernateAccessException(HibernateTransactionManager.java:741)
+	at org.springframework.orm.hibernate5.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:589)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:485)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:291)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy35.update(Unknown Source)
+	at com.blog.LHT.service.testcrud.UserTest.testUpdate(UserTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.StaleStateException: Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1
+	at org.hibernate.jdbc.Expectations$BasicExpectation.checkBatched(Expectations.java:67)
+	at org.hibernate.jdbc.Expectations$BasicExpectation.verifyOutcome(Expectations.java:54)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3071)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2950)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3330)
+	at org.hibernate.action.internal.EntityUpdateAction.execute(EntityUpdateAction.java:145)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1282)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:465)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2963)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2339)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.springframework.orm.hibernate5.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:581)
+	... 39 more
+</error>
+    <system-out>Hibernate: 
+    update
+        t_user 
+    set
+        address=?,
+        birth=?,
+        email=?,
+        intro=?,
+        lastUpdateTime=?,
+        password=?,
+        permiss=?,
+        phoneNum=?,
+        QQ=?,
+        readHistory=?,
+        regiTime=?,
+        sex=?,
+        userName=?,
+        headImgPath=?,
+        blogIntro=?,
+        pageView=?,
+        bgImgPath=?,
+        blogName=? 
+    where
+        userId=?
+</system-out>
+    <system-err>Fri Apr 28 07:55:38 CST 2017 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Apr 28 07:55:38 CST 2017 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Apr 28 07:55:38 CST 2017 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+</system-err>
+  </testcase>
+  <testcase classname="com.blog.LHT.service.testcrud.UserTest" name="testTimeForm" time="0.515"/>
+  <testcase classname="com.blog.LHT.service.testcrud.UserTest" name="testTimestamp" time="0.492"/>
+  <testcase classname="com.blog.LHT.service.testcrud.UserTest" name="testAdd" time="0.739"/>
+  <testcase classname="com.blog.LHT.service.testcrud.UserTest" name="testHQL" time="0.608"/>
+</testsuite>

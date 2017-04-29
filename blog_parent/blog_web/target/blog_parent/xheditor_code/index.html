@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>indexl.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+  <script type="text/javascript" src="xheditor/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="xheditor/xheditor-1.2.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="xheditor/xheditor_lang/zh-cn.js"></script>
+	<style type="text/css">
+	<!-- /* 增加插入代码工具图标 */
+	.btnCode {
+		background: transparent url(img/code.png) no-repeat 0px 0px;
+		background-position: 3px -2px;
+	}
+	-->
+	</style>
+<script type="text/javascript">
+	$(function(){
+		   var plugins={
+				Code:{c:'btnCode',t:'插入代码',h:1,e:function(){
+					var _this=this;
+					var htmlCode="<div>编程语言<select id='xheCodeType'>";
+						htmlCode+="<option value='html'>HTML/XML</option>";
+						htmlCode+="<option value='js'>Javascript</option>";
+						htmlCode+="<option value='css'>CSS</option>";
+						htmlCode+="<option value='php'>PHP</option>";
+						htmlCode+="<option value='java'>Java</option>";
+						htmlCode+="<option value='py'>Python</option>";
+						htmlCode+="<option value='pl'>Perl</option>";
+						htmlCode+="<option value='rb'>Ruby</option>";
+						htmlCode+="<option value='cs'>C#</option>";
+						htmlCode+="<option value='c'>C++/C</option>";
+						htmlCode+="<option value='vb'>VB/ASP</option>";
+						htmlCode+="<option value=''>其它</option>";
+						htmlCode+="</select></div><div>";
+						htmlCode+="<textarea id='xheCodeValue' wrap='soft' spellcheck='false' style='width:300px;height:100px;' />";
+						htmlCode+="</div><div style='text-align:right;'><input type='button' id='xheSave' value='确定' /></div>";			
+					var jCode=$(htmlCode),jType=$('#xheCodeType',jCode),jValue=$('#xheCodeValue',jCode),jSave=$('#xheSave',jCode);
+					jSave.click(function(){
+						_this.loadBookmark();
+						_this.pasteHTML('<pre class="brush: '+jType.val()+'">'+_this.domEncode(jValue.val())+'</pre>&nbsp;');
+						_this.hidePanel();
+						return false;	
+					});
+					_this.saveBookmark();
+					_this.showDialog(jCode);
+				}},
+				
+			};
+			$('#content').xheditor({
+					plugins:plugins,  //使用我们定义的插件  
+					loadCSS:'<style>pre{margin-left:2em;border-left:3px solid #CCC;padding:0 1em;}</style>',
+			});
+	})
+</script>
+  </head>
+  
+  <body>
+  		 <div align="center">
+			<textarea rows="20" cols="110" id="content">
+			</textarea>
+		</div>
+  </body>
+</html>

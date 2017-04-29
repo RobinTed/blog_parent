@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+		<package name="article" extends="struts-default" namespace="/article">
+			<action name="article_*" class="articleAction" method="{1}">
+				<result name="showArticlePage">/WEB-INF/jsp/article/singleView.jsp</result>
+				<result name="listArticle">/WEB-INF/jsp/article/listView.jsp</result>
+			</action>
+		</package>
+	</struts>

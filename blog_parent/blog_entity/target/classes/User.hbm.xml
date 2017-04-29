@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+   <hibernate-mapping>
+   		<class name="com.blog.LHT.entity.User" table="t_user">
+   			<id name="userId" column="userId">
+   				<generator class="native"></generator>
+   			</id>
+   			<property name="address" column="address"></property>
+   			<property name="birth" column="birth"></property>
+   			<property name="email" column="email"></property>
+   			<property name="intro" column="intro"></property>
+   			<property name="lastUpdateTime" column="lastUpdateTime"></property>
+			<property name="password" column="password"></property>
+   			<property name="permiss" column="permiss"></property>
+   			<property name="phoneNum" column="phoneNum"></property>
+   			<property name="QQ" column="QQ"></property>
+   			<property name="readHistory" column="readHistory"></property>
+   			<property name="regiTime" column="regiTime"></property>
+   			<property name="sex" column="sex"></property>
+   			<property name="userName" column="userName"></property>
+   			<property name="headImgPath" column="headImgPath"></property>
+   			<property name="blogIntro" column="blogIntro"></property>
+   			<property name="pageView" column="pageView"></property>
+   			<property name="bgImgPath" column="bgImgPath"></property>
+   			<property name="blogName" column="blogName"></property>
+   		</class>
+   </hibernate-mapping>

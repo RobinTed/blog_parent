@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+		<package name="user" extends="struts-default" namespace="/user">
+		
+		<!-- 声明拦截器
+			和spring集成出现问题
+		 -->
+<!-- 		<interceptors>
+			<interceptor name="loginInterceptor" class="com.blog.LHT.action.interceptor.LoginInterceptor"></interceptor>
+				<interceptor-stack name="loginInterceptorStack">
+					<interceptor-ref name="defaultStack"></interceptor-ref>
+					<interceptor-ref name="loginInterceptor"></interceptor-ref>
+				</interceptor-stack>
+		</interceptors> -->
+					
+			<action name="user_*" class="userAction" method="{1}">
+				<!-- <interceptor-ref name="loginInterceptorStack"></interceptor-ref> -->
+				<result name="mainPage">/WEB-INF/jsp/user/mainPage.jsp</result>
+				<result name="modifyPage">/WEB-INF/jsp/user/modifyPage.jsp</result>
+				<result name="writePage">/WEB-INF/jsp/user/writeArticle.jsp</result>
+			</action>
+			
+			<action name="modify_*" class="modifyAction" method="{1}">
+				<!-- <interceptor-ref name="loginInterceptorStack"></interceptor-ref> -->
+				<result name="update" type="redirectAction">user_mainPage</result>
+			</action>
+			
+			<action name="write_*" class="writeArticleAction" method="{1}">
+				<!-- <result name="showArticle" type="redirectAction">
+					<param name="namespace">/article</param>
+					<param name="actionName">article_showArticle</param>
+				</result> -->
+				<!-- <result name="showArticle" type="redirectAction">user_mainPage</result> -->
+			</action>
+		</package>
+	</struts>
