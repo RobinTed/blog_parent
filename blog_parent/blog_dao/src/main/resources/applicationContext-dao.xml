@@ -22,6 +22,9 @@
 			 		<property name="jdbcUrl" value="jdbc:mysql://localhost:3307/blog?autoReconnect=true" />
 			 		<property name="user" value="root" />
 			 		<property name="password" value="0123" />
+			 		<property name="preferredTestQuery" value="SELECT 1"/>    
+					<property name="idleConnectionTestPeriod" value="18000"/>    
+					<property name="testConnectionOnCheckout" value="true"/>  
 	</bean>
         
         <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
