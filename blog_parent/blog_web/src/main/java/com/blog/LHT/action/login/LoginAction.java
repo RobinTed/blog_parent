@@ -100,7 +100,7 @@ public class LoginAction extends ActionSupport implements ModelDriven<User>{
 			} catch (NoSuchAlgorithmException e) {
 				e.printStackTrace();
 			}
-			String content = "欢迎注册本论坛，<a href='http://yuedu.51vip.biz/blog_parent/login"
+			String content = "欢迎注册本论坛，<a href='http://www.shutup.club/blog_parent/login"
 					+ "/login_active.action?activationCode="+activationCode+"&id="+user.getUserId()+"'>点击我</a>"
 							+ "进行激活用户。此链接4小时内有效，请尽快点击";
 			try {
