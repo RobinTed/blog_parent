@@ -19,9 +19,18 @@ $(function(){
 		interval:2000
 	})
 })
- function getVerify(obj) {
+/*  function getVerify(obj) {
 		obj.src = "${prc }/login/login_verifyImg?s="+new Date().getTime();
-	} 
+	} */
+	$(function(){
+		getVerify();
+		/* $("#code").attr("src","${prc}/login/login_verifyImg?s="+new Date().getTime()); */
+		$("#change").on("click",getVerify);
+	});
+	 function getVerify() {
+		/*  alert("1"); */
+	 	$("#code").attr("src","${prc}/login/login_verifyImg?s="+new Date().getTime());
+	 }
 $(function(){
 		$("#trr").hide();
 //	alert($("#register"))
@@ -202,6 +211,14 @@ $(function(){
 									<%-- <button style="width:100px;height:50px;background: url(${prc }/login/login_verifyImg)" onclick="getVerify(this)" title="点击更换" class="btn btn-default"></button>
 									<input type="text" class="form-control" placeholder="验证码"  name="inputcode" id="inputcode"/> --%>
 									<%-- <span style="color: red" id="code_msg">${wrongCode }</span> --%>
+									<span class="input-group-addon">输入验证码</span>
+									<div class="input-group-addon">
+										<img id="code" />
+										<span id="change" style="font: '微软雅黑';color: blue;cursor: pointer;">点击更换</span>
+									</div>
+										<input type="text" class="form-control" placeholder="验证码"  name="inputcode" id="inputcode"/>
+										<span  style="color: red" id="code_msg">${wrongCode }</span>
+										<span  id="verify_msg"></span>
 								</div>
 							</td>
 							<!-- <td style="width=100px"><span  id="verify_msg"></span></td> -->
@@ -213,7 +230,7 @@ $(function(){
 				</table>
 				 </form>  
 				 
-				 	<div class="input-group" style="width: 400px;padding-left: 100px;padding-top: -10px" >
+				 	<%-- <div class="input-group" style="width: 400px;padding-left: 100px;padding-top: -10px" >
 			<span class="input-group-addon" style="margin-left: 1000px">输入验证码</span>
 				<button class="btn btn-default">
 										<img alt="" src="${prc }/login/login_verifyImg" onclick="getVerify(this)" title="点击更换">
@@ -222,7 +239,7 @@ $(function(){
 			<input type="text" class="form-control" placeholder="验证码"  name="inputcode" id="inputcode"/>
 			<span  style="color: red" id="code_msg">${wrongCode }</span>
 			<span  id="verify_msg"></span>
-		</div>
+		</div> --%>
 				 
 				<%--  <span class="input-group-addon">输入验证码</span>
 				<input type="image" src="${prc }/login/login_verifyImg" onclick="getVerify(this)" title="点击更换" />
